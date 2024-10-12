@@ -1,0 +1,18 @@
+body {
+    
+}
+
+.contenedor {
+    min-height: 100vh;
+    height: auto;
+    margin: 0;
+    background-image: url('/img/fondoLogin.jpg');
+    position: relative;
+}
+
+.surface-card { //para centrarlo, junto con position relative del contenedor
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
