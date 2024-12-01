@@ -4,7 +4,7 @@ import { CursoComponent } from './pages/curso/curso.component';
 import { LoginComponent } from './pages/auth/login/login.component';
 import { RegistroComponent } from './pages/auth/registro/registro.component';
 import { RecuperarPswComponent } from './pages/auth/recuperar-psw/recuperar-psw.component';
-import { MatricesComponent } from './pages/matrices/matrices.component';
+import { TemaComponent } from './pages/tema/tema.component';
 
 export const routes: Routes = [
     {
@@ -34,9 +34,9 @@ export const routes: Routes = [
         title: 'Recuperar contraseña'
     },
     {
-        path: 'matrices',
-        component: MatricesComponent,
-        title: 'Matrices'
+        path: 'tema',
+        component: TemaComponent,
+        title: 'tema'
     },
     {
         path: '**',

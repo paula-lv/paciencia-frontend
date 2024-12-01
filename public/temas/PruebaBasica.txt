@@ -1,0 +1,27 @@
+titulo:Las derivadas
+
+header:¿Qué es una derivada?
+La derivada de una función es un concepto matemático que describe cómo cambia el valor de la función en relación con su variable independiente.
+En otras palabras, la derivada proporciona información sobre la tasa de cambio instantáneo de la función en un punto dado.
+
+header:¿Cómo se denota?
+Se denota comúnmente por \(f'(x)\),\(\frac{df}{dx}\), o simplemente \(y'\), donde \(y\) es la función y \(x\) es la variable independiente. 
+
+Hay que tener en cuenta que existen niveles más avanzados, pero comencemos desde el principio.
+
+Geométricamente, la derivada en un punto también se interpreta como la pendiente de la tangente a la curva de la función en ese punto.
+Si la derivada es positiva, indica que la función está aumentando en ese punto; si es negativa, la función está disminuyendo.
+Si la derivada es cero, la función tiene un punto crítico o un extremo (local o absoluto).
+
+Para simplicar ¿qué tipo de funciones básicas podemos saber si crecen o decrecen y con que intensidad? ¡ESO ES! Las funciones lineales
+¿Qué no recuerdas como son? No te preocupes, recordemos que forma tienen:
+
+	\[\boldsymbol{f(x) = mx + n} \quad \text{ o también } \quad \boldsymbol{y = mx + n}\]
+
+Así es, como has podido averiguar, estas funciones representan RECTAS siendo \(m\) la pendiente, indicando el crecimiento o decreciemiento de la función.
+¿Qué importancia tiene recordar esto? Veamos, recordemos como se calcula:
+
+Teniendo dos puntos \(P(x_1,y_1)\) y \(P(x_2,y_2)\) la pendiente \(m\) se puede calcular como:
+
+	\[\boldsymbol{m = \frac{y_2 - y_1}{x_2 - x_1}} \quad \text{ equivalente a } \quad \boldsymbol{m = \frac{\Delta y}{\Delta x}} \]
+

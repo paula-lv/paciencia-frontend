@@ -1,0 +1,231 @@
+titulo:Máximo Común Divisor y Mínimo Común Múltiplo
+
+## Comienzo ## ESTO ES UNA PRIMERA PARTE #### Que estaría bastante bien que funcione
+
+	
+	
+			\[f(x) = \frac{x}{x^2 - 2x - 3} \quad \text{en } x = 1 \]
+
+                        Para mayor comodidad, previamente calculamos \(f(1)\)
+                        \[f(1) = \frac{1}{1^2 - 2(1) - 3} = \frac{1}{1 - 2 - 3} = \frac{1}{-4} = -\frac{1}{4}\]
+
+                        También podemos calcular \(f(1 + h)\)
+                        \[f(1 + h) = \frac{1+h}{(1 + h)^2 - 2(1 + h) - 3} = \frac{1 + h}{1 + 2h + h^2 - 2 - 2h - 3} = \frac{1 + h}{h^2 - 4}\]
+                                                        
+                        Para encontrar la derivada \(f'(a)\) utilizando la definición:
+                        \[f'(a) = \lim_{{h \to 0}} \frac{f(a + h) - f(a)}{h}\]
+                                                    
+                        Aplicamos la definición a la función \(f(x) = \frac{x}{x^2 - 2x - 3}\):
+                                                    
+                        \[
+                        \begin{align*}
+                            f'(1) & = \lim_{{h \to 0}} \frac{f(1 + h) - f(1)}{h} = \lim_{{h \to 0}} \frac{\frac{1 + h}{h^2 - 4} -(-\frac{1}{4})}{h} = \\
+                                 & = \lim_{{h \to 0}} \frac{\frac{1 + h}{h^2 - 4} + \frac{1}{4}}{h} = \lim_{{h \to 0}} \frac{\frac{4(1 + h)}{4(h^2 - 4)} + \frac{h^2 - 4}{4(h^2 - 4)}}{h} = \\
+                                 & = \lim_{{h \to 0}} \frac{\frac{4 + 4h + h^2 - 4 }{4(h^2 - 4)}}{h} = \lim_{{h \to 0}} \frac{\frac{h^2 + 4h}{4(h^2 - 4)}}{h} = \\
+                                 & = \lim_{{h \to 0}} \frac{h^2 + 4h}{4h(h^2 - 4)} = \frac{0}{0} \stackrel{\scriptscriptstyle\textcolor{red}{\text{IND.}}}{=} 
+                                     \lim_{{h \to 0}} \frac{\textcolor{red}{\cancel{\textcolor{black}{h}}}(h + 4)}{4\textcolor{red}{\cancel{\textcolor{black}{h}}}(h^2 - 4)} = \\
+                                 & = \lim_{{h \to 0}} \frac{h + 4}{4(h^2 - 4)} = \frac{\textcolor{red}{\cancel{\textcolor{black}{4}}}}{\textcolor{red}{\cancel{\textcolor{black}{4}}}(-4)} = \frac{1}{-4} = -\frac{1}{4}\\
+                            \end{align*}
+                            \]
+
+                        Por lo tanto, la derivada de \(f(x) = \frac{x}{x^2 - 2x - 3}\) en \(x = 1\) es \(f'(1) = -\frac{1}{4}\).
+
+## FIN ## ESTO ES UNA PRIMERA PARTE #### Que estaría bastante bien que funcione
+                    
+
+\begin{enumerate}
+		\item Encuentra el máximo común divisor(m.c.d.) de los siguientes pares de números:
+
+		
+		\begin{enumerate}
+			\item $\text{m.c.d.}(24, 36) = $
+			\item $\text{m.c.d.}(56, 98) = $
+			\item $\text{m.c.d.}(81, 45) = $
+			\item $\text{m.c.d.}(120, 180) = $
+			\item $\text{m.c.d.}(48, 60) = $
+			\item $\text{m.c.d.}(144, 256) = $
+			\item $\text{m.c.d.}(84, 126) = $
+			\item $\text{m.c.d.}(225, 150) = $
+			\item $\text{m.c.d.}(90, 270) = $
+			\item $\text{m.c.d.}(108, 72) = $
+		\end{enumerate}
+		
+		\item Encuentra el mínimo común múltiplo(m.c.m.) de los siguientes pares de números:
+		\begin{enumerate}
+			\item $\text{m.c.m.}(15, 20) = $
+			\item $\text{m.c.m.}(9, 12) = $
+			\item $\text{m.c.m.}(35, 50) = $
+			\item $\text{m.c.m.}(21, 14) = $
+			\item $\text{m.c.m.}(16, 24) = $
+			\item $\text{m.c.m.}(28, 42) = $
+			\item $\text{m.c.m.}(18, 30) = $
+			\item $\text{m.c.m.}(60, 75) = $
+			\item $\text{m.c.m.}(10, 25) = $
+			\item $\text{m.c.m.}(33, 44) = $
+		\end{enumerate}
+		
+¡Problemas Aplicados!
+		Resuelve los siguientes problemas donde deberás utilizar el MCD o el MCM:
+		\begin{enumerate}
+			\item Marta tiene $24$ lápices y $36$ bolígrafos. Quiere agruparlos en paquetes iguales sin que sobre nada. ¿Cuál es el mayor número de paquetes que puede formar?
+			
+			\item Una fábrica produce cajas de $15$ y $20$ unidades de un producto. ¿Cuál es el número mínimo de unidades que la fábrica debe producir para tener la misma cantidad de productos en ambos tipos de cajas?
+			
+			\item En una carrera, los corredores A y B dan vueltas a una pista. El corredor A tarda $18$ minutos en completar una vuelta, y el corredor B tarda $24$ minutos. Si ambos comienzan al mismo tiempo, ¿cuántos minutos pasarán hasta que ambos estén juntos en la línea de salida nuevamente?
+			
+			\item Una escuela tiene $36$ tabletas y $48$ laptops. El director quiere dividirlas en grupos idénticos para diferentes clases, asegurándose de que cada grupo tenga la misma cantidad de tabletas y la misma cantidad de laptops. ¿Cuál es el mayor número de grupos que puede formar?
+			
+			\item Dos faros emiten un destello de luz a intervalos regulares. El primer faro emite un destello cada $15$ segundos y el segundo cada $20$ segundos. Si ambos emiten un destello a las 12:00 p.m., ¿cuánto tiempo pasará hasta que emitan un destello juntos de nuevo?
+			
+		\end{enumerate}
+		
+		\begin{itemize}
+			\item[Nota: ] Para el m.c.d. de dos números, a veces NO hay en su factorización números COMUNES. Por lo que su divisor común sería el 1, que siempre está presente.
+			
+			\begin{center}
+				\begin{tabular}{lcccr}
+						$21 = 3 \cdot 7$ &  & $20 = 2^2 \cdot 5$ &  & $\text{m.c.d.}(21, 20) = 1 $ 
+				\end{tabular}
+			\end{center}
+			
+			
+		\end{itemize}
+		
+		\section{¿Qué pasaría si aumentamos el nivel? ¿Intentamos entenderlos? Seguro que eres capaz.}
+		
+		Veamos un ejemplo si queremos calcular el \textbf{m.c.d}. de 3 números al mismo tiempo: $\text{m.c.d.}(24, 27, 18)$.
+		\begin{center}
+			\begin{tabular}{ccccc}
+				\begin{tabular}{r|l c r|l c r|l}
+					$24$ & $2$ & & $27$ & $3$ & & $18$ & $2$ \\ %
+					$12$ & $2$ & & $9$  & $3$ & & $9$  & $3$ \\ %
+					$6$  & $2$ & & $3$  & $3$ & & $3$  & $3$ \\ %
+					$3$  & $3$ & & $1$  &     & & $1$  &     \\ %
+					$1$  & 	   & & 	    & 	  & &      & 
+				\end{tabular}
+				&
+				
+				&
+				\begin{tabular}{rcl}
+					$24$ & = & $2^3 \cdot 3$ \\ 
+					$27$ & = & $3^3$ \\ 
+					$18$ & = & $2 \cdot 3^2$ \\ 
+				\end{tabular}
+				&
+				
+				&
+				\begin{tabular}{l}
+					Solución: \\
+					 $\text{m.c.d.}(24, 27, 18) = 2 \cdot 3 = 6$.
+				\end{tabular}
+			\end{tabular}
+		\end{center}
+		
+		\item Encuentra el máximo común divisor(m.c.d.) de los siguientes tríos de números:
+		\begin{enumerate}
+			\item $\text{m.c.d.}(24, 36, 60) = $
+			\item $\text{m.c.d.}(48, 72, 120) = $
+			\item $\text{m.c.d.}(81, 27, 45) = $
+			\item $\text{m.c.d.}(100, 150, 200) = $
+			\item $\text{m.c.d.}(18, 30, 42) = $
+		\end{enumerate}
+		
+			Ahora, veamos un ejemplo si queremos calcular el \textbf{m.c.m}. de 3 números al mismo tiempo: $\text{m.c.m.}(12, 9, 30)$.
+		\begin{center}
+			\begin{tabular}{ccccc}
+				\begin{tabular}{r|l c r|l c r|l}
+					$12$ & $2$ & & $9$  & $3$ & & $30$  & $2$ \\ %
+					$6$  & $2$ & & $3$  & $3$ & & $15$  & $3$ \\ %
+					$3$  & $3$ & & $1$  &     & & $5$   & $5$ \\ %
+					$1$  & 	   & & 	    & 	  & & $1$   & 
+				\end{tabular}
+				&
+				
+				&
+				\begin{tabular}{rcl}
+					$12$ & = & $2^2 \cdot 3$ \\ 
+					$9$ & = & $3^2$ \\ 
+					$30$ & = & $2 \cdot 3  \cdot 5$ \\ 
+				\end{tabular}
+				&
+				
+				&
+				\begin{tabular}{l l l}
+					Solución: & \\
+					$\text{m.c.d.}(12, 9, 30) $ & $ = 2^2 \cdot 3^2 \cdot 5$ & $ = $ \\
+					& $ = 4 \cdot 9 \cdot 5 $ & $= 180 $ .
+				\end{tabular}
+			\end{tabular}
+		\end{center}
+		
+		\item Encuentra el mínimo común múltiplo(m.c.m) de los siguientes tríos de números:
+		\begin{enumerate}
+			\item $\text{m.c.m.}(15, 20, 30) = $
+			\item $\text{m.c.m.}(12, 18, 24) = $
+			\item $\text{m.c.m.}(14, 28, 42) = $
+			\item $\text{m.c.m.}(8, 12, 20) = $
+			\item $\text{m.c.m.}(21, 35, 49) = $
+		\end{enumerate}
+		
+		
+		\item Resuelve los siguientes problemas utilizando el m.c.d o el m.c.m. de tres números:
+		\begin{enumerate}
+			\item Tres amigos tienen $24$, $36$ y $60$ caramelos, respectivamente. Quieren dividirlos en bolsas iguales, sin que sobre ninguno. ¿Cuál es el mayor número de bolsas que pueden hacer? \\
+			
+			\item Una empresa necesita coordinar la entrega de tres productos que se despachan cada $15$, $20$ y $30$ días, respectivamente. Si todas las entregas coinciden hoy, ¿en cuántos días volverán a coincidir todas las entregas? \\
+			
+			\item Tres grupos de estudiantes tienen $48$, $72$ y $120$ hojas de papel. El profesor quiere repartir todas las hojas en paquetes idénticos, sin que sobren hojas. ¿Cuál es el mayor número de paquetes que puede hacer? \\
+			
+			\item Tres luces parpadean a intervalos de $8$, $12$, y $20$ segundos, respectivamente. Si todas parpadean juntas ahora, ¿en cuántos segundos volverán a parpadear juntas? \\
+			
+			\item Tres hermanos reciben $18$, $30$ y $42$ monedas, respectivamente. Quieren dividirlas en partes iguales. ¿Cuál es la mayor cantidad de partes que pueden hacer sin que sobren monedas? \\
+
+		\end{enumerate}
+		
+		
+		\section{Problemas de Máximo Común Divisor y Mínimo Común Múltiplo. Genéricos.}
+		
+		\begin{enumerate}
+			\item Dos barcos salen del puerto de Cádiz. Uno vuelve cada 18 días y el otro cada 24 días. \\
+			¿Cuántos días deben transcurrir para que vuelvan a encontrarse en el puerto? \\
+			
+			\item Calcula el número mínimo de páginas que debe tener un libro, sabiendo que se quiere leer cada día 15 páginas, o bien 24 páginas. \\
+		
+			\item Calcula el número mínimo de páginas que debe tener un libro, sabiendo que se quiere leer cada día 15 páginas, o bien 24 páginas. \\
+			
+			\item Antonio quiere poner el suelo de la cocina de losetas cuadradas del mayor tamaño posible. Si la cocina mide 4,4 m de largo por 3,2 m de ancho, ¿cuántos centímetros debe medir de lado la loseta? \\
+			
+			\item Pedro y Sonia son primos. Pedro visita a sus abuelos cada 28 días, y Sonia, cada 35 días. Si un determinado domingo coinciden, ¿cuántos días deben pasar para que vuelvan a coincidir juntos en casa de sus abuelos? \\
+			
+			\item Los alumnos de un grupo de 2º ESO trabajan de dos en dos en clase de Matemáticas, hacen los trabajos de Lengua en grupos de 4, y los trabajos de Tecnología, en grupos de 5. Si la clase tiene menos de 40 alumnos, ¿cuántos alumnos tiene la clase? \\.
+			
+			\item Se tienen dos cuerdas, una de 28 m y la otra de 32 m. Se quieren cortar en trozos iguales del mayor tamaño posible. Calcula:
+			\begin{enumerate}
+				\item La longitud de cada trozo.
+				\item El número total de trozos.
+			\end{enumerate}
+			
+			\item Tenemos 550 litros de aceite de oliva y 445 litros de aceite de girasol, y queremos envasarlos en garrafas de igual capacidad (sin mezclarlos) y del mayor tamaño posible. Calcula:
+			\begin{enumerate}
+				\item La capacidad de cada garrafa.
+				\item El número de garrafas que se necesitan para envasar el aceite de oliva.
+				\item El número de garrafas que se necesitan para envasar el aceite de girasol.
+			\end{enumerate}
+			
+			\item Una finca tiene forma rectangular: mide de largo 225 m, y de ancho, 125 m. Se quieren plantar nogales lo más separados posible y a igual distancia. Calcula:
+			\begin{enumerate}
+				\item ¿A qué distancia se plantarán?
+				\item ¿Cuántos se plantarán?
+			\end{enumerate}
+			
+			\item En la calle de una urbanización se quieren colocar farolas. Si se colocan cada 12 m, cada 18 m o cada 25 m, coinciden una al principio y otra al final. Calcula:
+			\begin{enumerate}
+				\item ¿Cuál es la longitud mínima de la calle?
+				\item ¿Cuántas farolas se necesitarán en cada caso?
+			\end{enumerate}
+			
+			\item En una sala de fiestas hay luces rojas, verdes y azules. Cuando se abre el local se encienden todas al mismo tiempo. Luego, las rojas se encienden cada 4 segundos; las verdes cada 6 segundos y las azules cada 5 segundos. ¿Cuánto tiempo tardarán en volver a coincidir? \\
+		\end{enumerate}		
+				
+		
+	\end{enumerate}

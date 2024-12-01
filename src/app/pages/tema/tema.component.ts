@@ -5,13 +5,13 @@ import { MenuBarComponent } from '../../shared/menu-bar/menu-bar.component';
 import { AccordionModule } from 'primeng/accordion';
 
 @Component({
-  selector: 'app-matrices',
+  selector: 'app-tema',
   standalone: true,
   imports: [MenuBarComponent, AccordionModule, NgFor, NgIf],
-  templateUrl: './matrices.component.html',
-  styleUrl: './matrices.component.scss'
+  templateUrl: './tema.component.html',
+  styleUrl: './tema.component.scss'
 })
-export class MatricesComponent {
+export class TemaComponent {
   titulo: String;
   headers: String[] = [];
   lines: String[] = [];
@@ -20,7 +20,7 @@ export class MatricesComponent {
   ngOnInit() {
     
 
-    this.http.get('temas/matrices.txt', {
+    this.http.get('temas/PruebaBasica.txt', {
       responseType: 'text'}).subscribe(data=> {
         //const reader = new FileReader();
         //const file = data;
@@ -40,7 +40,6 @@ export class MatricesComponent {
             }
             else {
               this.lines.push(line);
-              //document.getElementById("header0_content")!.innerHTML+= "<p>" + line + "</p>";
             }
           }
         }
